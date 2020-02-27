@@ -16,7 +16,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.conteiner {
+.container {
   width: 1200px;
   margin: 0 auto;
   background: none;
@@ -25,9 +25,8 @@ img {
 .page-nav {
   padding: 77px 0;
 }
-.site-navigation li {
-  margin-left: 55px;
-}
+
+
 .site-navigation li {
   display: inline-block;
 }
@@ -79,6 +78,7 @@ img {
 .features-image {
   width: 422px;
   height: 321px;
+  content: normal;
 }
 .page-footer {
   font-size: 20px;
