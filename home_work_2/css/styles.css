@@ -1,0 +1,44 @@
+body {
+  font-family: "Playfair Display", Arial;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+.page-header {
+}
+.site-navigation {
+  list-style-type: none;
+  font-size: 14px;
+}
+.site-navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #626262;
+  line-height: 24px;}
+.site-navigation a:hover{
+color: red;
+}
+.features-list {
+  list-style: none;
+}
+.features-list-maine h2 {
+  color: #626262;
+  line-height: 36px;
+}
+.features-list-item {
+  font-size: 14px;
+  line-height: 17px;
+}
+.page-footer {
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    …
+  }
