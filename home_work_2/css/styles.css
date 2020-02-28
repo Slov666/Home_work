@@ -20,10 +20,11 @@ img {
   width: 1200px;
   margin: 0 auto;
   background: none;
+  padding: 0px 150px;
 }
 /* SITE NAVIGATOON */
 .page-nav {
-  padding: 77px;
+  padding: 77px 0px;
 }
 
 .site-navigation li {
@@ -56,15 +57,12 @@ img {
   margin-left: 0;
   padding: 0;
   margin-bottom: auto;
-  
 }
 .features-list-li {
   width: 421px;
   display: inline-block;
   height: 125px;
   /* margin-right: 61px; */
-
-
 }
 .features-list-li:nth-of-type(2n + 1) {
   margin-right: 61px;
@@ -80,7 +78,7 @@ img {
   margin-bottom: 24px;
 }
 .features-image {
-  width: 422px;
+  width: 420px;
   height: 321px;
   content: normal;
 }
