@@ -16,7 +16,7 @@ html {
   margin: -1px;
 }
 body {
-  font-family: "Playfair Display", Arial;
+  font-family: "Playfair Display", "Ubuntu";
   color: #626262;
   font-size: 14px;
   line-height: 24px;
@@ -41,7 +41,9 @@ img {
 .page-nav {
   padding: 77px 0px;
 }
-
+.blue-text {
+  color: #03a9f4 !important;
+}
 .site-navigation li {
   display: inline-block;
 }
@@ -94,12 +96,16 @@ img {
 .features-list-main {
   font-size: 30px;
   margin-bottom: 38px;
+  font-weight: normal;
 }
 .features-list-item {
+  font-family: "Ubuntu";
   font-size: 14px;
   line-height: 17px;
   margin-top: 32px;
   margin-bottom: 35px;
+  color: #b4ad9e;
+  text-transform: uppercase;
 }
 .features-image {
   width: 420px;
@@ -126,7 +132,7 @@ img {
 .page-footer {
   margin-top: 47px;
   margin-bottom: 70px;
-  margin-left: 385px;
+  margin-left: 359px;
   padding: 0 auto;
   border-width: 1px;
   border-color: rgb(0, 0, 0);
