@@ -29,6 +29,7 @@ img {
 }
 .container {
   width: 903px /* 1200px */;
+  height: auto;
   margin: 0 auto;
   padding: 0px 150px;
 }
@@ -36,12 +37,13 @@ img {
 .page-header {
   margin: 0 auto;
   background: none;
-  padding: 0px 150px;
+  text-align: center;
 }
 .page-nav {
-  padding: 77px 0px;
+  padding: 72px 0px 0px 0px;
+  height: 100px;
 }
-.blue-text {
+.blue-text:hover {
   color: #03a9f4 !important;
 }
 .site-navigation li {
@@ -53,7 +55,9 @@ img {
 .site-navigation {
   list-style-type: none;
   font-size: 14px;
+
   margin: 0;
+  margin-bottom: 98px;
   padding: 0;
   display: inline-block;
   vertical-align: middle;
@@ -63,6 +67,7 @@ img {
   text-decoration: none;
   color: #626262;
   line-height: 24px;
+  display: block;
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -70,21 +75,23 @@ img {
 }
 /* FEATURES LIST */
 .features {
-  margin-bottom: 47;
+  margin-bottom: 54px;
 }
 .features-list {
   list-style: none;
   margin-left: 0;
   padding: 0;
-  margin-bottom: auto;
+
   font-size: 0px;
 }
+
 .features-list-li {
   width: 421px;
   display: inline-block;
-  height: 125px;
-
-  /* margin-right: 61px; */
+  margin-bottom: 135px;
+}
+.features-list li:nth-last-of-type(-n + 2) {
+  margin-bottom: 0px;
 }
 .features-list-li:nth-of-type(2n + 1) {
   margin-right: 61px;
@@ -95,6 +102,7 @@ img {
 }
 .features-list-main {
   font-size: 30px;
+  margin: 0;
   margin-bottom: 38px;
   font-weight: normal;
 }
@@ -102,7 +110,6 @@ img {
   font-family: "Ubuntu";
   font-size: 14px;
   line-height: 17px;
-  margin-top: 32px;
   margin-bottom: 35px;
   color: #b4ad9e;
   text-transform: uppercase;
@@ -111,18 +118,19 @@ img {
   width: 420px;
   height: 321px;
   content: normal;
+  margin-bottom: 26px;
 }
 .lorem {
   font-size: 14px;
-  margin-bottom: 135px;
+  margin: 0 auto;
 }
 .lorem1 {
   font-size: 14px;
-  margin-bottom: 53px;
+  margin: 0;
 }
-.lorem {
+/* .lorem {
   overflow: hidden;
-}
+} */
 /* FOOTER SECTOIN */
 .page-footer {
   font-size: 20px;
@@ -130,9 +138,9 @@ img {
   color: #626262;
 }
 .page-footer {
-  margin-top: 47px;
-  margin-bottom: 70px;
+  /*   margin-top: 47px; */
   margin-left: 359px;
+  margin-bottom: 70px;
   padding: 0 auto;
   border-width: 1px;
   border-color: rgb(0, 0, 0);
@@ -152,4 +160,8 @@ img {
   line-height: 24px;
   font-size: 20px;
   cursor: pointer;
+}
+.load:hover,
+.load:focus {
+  color: #ff0000;
 }
