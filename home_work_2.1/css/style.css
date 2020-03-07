@@ -29,9 +29,8 @@ img {
 /* SITE NAVIGATION */
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 900px;
   height: auto;
-  padding: 0px 150px;
   text-align: center;
 }
 .page-headder {
@@ -43,6 +42,7 @@ img {
 }
 .site-navigation {
   margin: 0 auto;
+  padding: 0;
 }
 .site-navigation-li {
   display: inline-block;
@@ -59,17 +59,14 @@ img {
   font-size: 14px;
   line-height: 24px;
 }
-.site-navigation a:hover,
-.site-navigation a:focus {
-  color: red;
-}
-.site-navigation-li a:first-child:hover {
+.site-navigation-li a:hover,
+.site-navigation-li a:focus {
   color: aqua;
 }
-
 /* SECTION */
 .section {
   margin-bottom: 53px;
+  padding: 0px;
 }
 .section-info {
   display: inline-block;
@@ -106,18 +103,10 @@ img {
   font-size: 14px;
   margin: auto;
 }
-.footer {
-  padding: 0px 0px 0px;
-  border-width: 1px;
-  border-color: rgb(0, 0, 0);
-  border-style: solid;
-  width: 162px;
-  height: 58px;
-  text-align: center;
-}
 .button {
   font-family: "Playfair Display";
   color: #626262;
+  padding: 0px;
   border: none;
   width: 162px;
   height: 58px;
@@ -125,6 +114,9 @@ img {
   font-size: 20px;
   background: white;
   display: inline-block;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
   margin-bottom: 70px;
 }
 .button:hover,
