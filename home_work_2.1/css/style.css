@@ -42,7 +42,6 @@ img {
 }
 .site-navigation {
   margin: 0 auto;
-  padding: 0;
 }
 .site-navigation-li {
   display: inline-block;
@@ -82,8 +81,8 @@ img {
   height: 300px;
   margin-bottom: 26px;
 }
-.section-info:nth-last-of-type(2n + 1) {
-  margin-left: 60px;
+.section-info:nth-child(odd) {
+  margin-right: 60px;
 }
 .section-style {
   font-family: "Ubuntu";
@@ -117,9 +116,12 @@ img {
   border-width: 1px;
   border-color: rgb(0, 0, 0);
   border-style: solid;
-  margin-bottom: 70px;
+  /*  margin-bottom: 70px; */
 }
 .button:hover,
 .button:focus {
   color: #ff0000;
+}
+section {
+  padding-bottom: 70px;
 }
