@@ -74,7 +74,7 @@ body {
 .banner {
   width: 1600px;
   min-height: 600px;
-  background-image: url("/img/slide4.png");
+  background-image: url("./img/slide4.png");
   background-position: center;
   background-size: cover;
   position: relative;
