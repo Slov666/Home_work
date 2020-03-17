@@ -5,9 +5,9 @@ html {
 *::before *::after {
   box-sizzing: inherit;
 }
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -28,11 +28,16 @@ body {
   margin: 0 auto;
   padding: 0px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* SITE NAVIGATION */
 
-.nav {
-  margin-bottom: 84px;
+.header {
+  padding: 0px 0px 42px 0px;
 }
 .logo {
   font-size: 30px;
@@ -51,16 +56,22 @@ a.logo::first-letter {
   list-style: none;
   padding: 11px;
   margin: 0 auto;
+  float: right;
+}
+.site-navigation li {
+  float: left;
 }
 .site-navigation-li a {
-  margin-right: 35px;
   font-weight: bold;
   font-size: 14px;
   line-height: 11px;
   text-transform: uppercase;
   text-decoration: none;
   color: #140707;
-  float: right;
+  display: block;
+}
+.site-navigation-li:not(last-child) {
+  margin-right: 35px;
 }
 .site-navigation-li a:hover {
   color: #1abc9c;
@@ -90,9 +101,13 @@ a.logo::first-letter {
 .h2:last-child {
   margin-bottom: 112px;
 }
-
+/* CATALOG PRODUCTS */
+.products {
+  padding-bottom: 84px;
+}
 .catalog {
   padding: 0px;
+  margin: 0 auto;
 }
 .catalog-item:nth-child(-n + 4) {
   margin-bottom: 30px;
@@ -100,7 +115,6 @@ a.logo::first-letter {
 .catalog-item {
   list-style: none;
   float: left;
-  margin-bottom: 96px;
 }
 .catalog-item:nth-child(-n + 3) {
   margin-right: 30px;
@@ -158,6 +172,7 @@ a.logo::first-letter {
 }
 .news-ul {
   padding: 0px;
+  margin: 0 auto;
 }
 .news-item {
   width: 350px;
@@ -191,4 +206,8 @@ a.logo::first-letter {
   color: #ffffff;
   background-color: #4ec6ab;
   text-decoration: none;
+  display: block;
+}
+.read-more:hover {
+  color: red;
 }
