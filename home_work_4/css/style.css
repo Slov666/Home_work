@@ -10,9 +10,6 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --ten-pix: 10px;
-}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -84,6 +81,7 @@ section {
   background-position: center;
   background-size: cover;
   text-align: center;
+  min-height: 600px;
 }
 .banner-position {
   min-height: 600px;

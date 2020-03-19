@@ -30,16 +30,19 @@ body {
   text-transform: uppercase;
   list-style: none;
 }
-.container {
-  width: 1170px;
-  margin: 0 auto;
-  padding: 0px;
-}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+section {
+  display: block;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0px;}
 /* ################################ ##LOGO */
 .logo {
   text-transform: uppercase;
@@ -48,18 +51,16 @@ img {
   text-decoration: none;
   font-weight: 300;
   float: left;
-
 }
 
 .logo:first-letter {
   color: #7fd9c7;
 }
 /*  ########################## SITE NAVIGATION */
-.nav-div{
+.nav-div {
   padding: 42px 0px 36px 0px;
 }
 .nav {
-
 }
 .site-navigation {
   float: right;
@@ -70,7 +71,7 @@ img {
   float: left;
   margin-right: 32px;
 }
-.site-navigation-li a{
+.site-navigation-li a {
   font-family: Roboto;
   font-size: 14px;
   line-height: 11px;
@@ -78,17 +79,25 @@ img {
   text-decoration: none;
   font-weight: 700;
 }
-.site-navigation-li a:hover{
+.site-navigation-li a:hover {
   color: #1abc9c;
 }
 /* ##################################### BANER */
-.banner{
-  background-image: url("/img/slide4.png");
+.banner-main {
+  background-image: url(../img/slide4.png);
   background-position: center;
+  background-size: cover;
+  text-align: center;
   background-repeat: no-repeat;
-  background: cover;
-  min-height: 600px;
-}
-.banner-position{
+  height: 600px;
   position: relative;
 }
+.banner-position {
+  position: absolute;
+
+  
+}
+/* .benner-ul{
+  position: absolute;
+}
+ */
