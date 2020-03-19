@@ -80,7 +80,7 @@ section {
   /* ################################################ BANNER */
 }
 .banner-main {
-  background-image: url(".img/slide4.png");
+  background-image: url(./img/slide4.png);
   background-position: center;
   background-size: cover;
   text-align: center;
