@@ -243,16 +243,16 @@ section {
   margin: 0px 10px 10px 0px
 }
 .icon-heart {
-  background-image: url(/icon/heart.png);
+  background-image: url(../icon/heart.png);
 }
 .icon-arrow {
-  background-image: url(/icon/arrows.png);
+  background-image: url(../icon/arrows.png);
 }
 .icon-clock {
-  background-image: url(/icon/clock.png);
+  background-image: url(../icon/clock.png);
 }
 .icon-card {
-  background-image: url(/icon/card.png);
+  background-image: url(../icon/card.png);
   width: 170px;
   text-transform: uppercase;
   font-size: 14px;
