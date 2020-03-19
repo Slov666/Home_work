@@ -79,7 +79,7 @@ section {
   /* ################################################ BANNER */
 }
 .banner-main {
-  background-image: url("/img/slide4.png");
+  background-image: url("./img/slide4.png");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -303,13 +303,13 @@ section {
   background-position: center;
 }
 .icon-heart {
-  background-image: url("/icon/heart.png");
+  background-image: url("./icon/heart.png");
 }
 .icon-arrow {
-  background-image: url("/icon/arrows.png");
+  background-image: url("./icon/arrows.png");
 }
 .icon-clock {
-  background-image: url("/icon/clock.png");
+  background-image: url("./icon/clock.png");
 }
 .icon-card {
   color: #fff;
