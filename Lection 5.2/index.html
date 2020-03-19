@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .products-title{
+            font-family: 'Roboto';
+            font-size: 48px;
+            line-height: 32px;
+            font-weight: 900;
+            letter-spacing: -1.2px;
+            color: #515151;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .products-title::after{
+            display: block;
+            margin: 0 auto;
+            margin-top: 32px;
+            content: "";
+            width: 160px;
+            height: 6px;
+            background: #1abc9c;
+        }
+        .products-wrap{
+            margin: 75px auto 100px auto;
+            width: 1110px;
+            min-height: 325px;
+        }
+        /*
+        ########## PRODUCTS ##########
+        */
+        .product-card{
+            position: relative;
+            display: inline-block;
+            width: 255px;
+        }
+        .product-img{
+            width: 100%;
+            height: auto;
+        }
+        .product-info{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: #323232;
+            color: #fff;
+            font-family: 'Roboto';
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: -1.2px;
+            text-transform: uppercase;
+        }
+        .product-name{
+            position: absolute;
+            left: 0;
+            padding: 6px 12px;
+            height: 40px;
+        }
+        .product-price{
+            position: absolute;
+            right: 0;
+            padding: 6px 12px;
+            height: 40px;
+            background: #8c8c8c;
+        }
+        .product-price::before{
+            content: "\0024";
+        }
+        .product-actions{
+            position: absolute;
+            display: none;
+            top: 0;
+            width: 100%;
+            min-height: 286px;
+            background: rgba(0,0,0,0.5);
+            border: 10px solid #fff;
+        }
+        .product-card:hover .product-actions{
+            display: block;
+        }
+        .product-card:hover .product-info{
+            background: #1abc9c;
+        }
+        .product-card:hover .product-price{
+            background: #7fd9c7;
+        }
+        .btn-wrap{
+            position: absolute;
+            top: 90px;
+            left: 35px;
+        }
+        .product-actions-btn{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #fff;
+            background: transparent;
+        }
+        .heart-ico, .arrows-ico, .clock-ico, .card-ico{
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .heart-ico:hover, .arrows-ico:hover, .clock-ico:hover, .card-ico:hover{
+            background-color: #1abc9c;
+        }
+        .heart-ico{
+            background-image: url('icon/heart.png');
+        }
+        .arrows-ico{
+            background-image: url('icon/arrows.png');
+        }
+        .clock-ico{
+            background-image: url('icon/clock.png');
+        }
+        .card-ico{
+            font-family: 'OpenSans';
+            font-size: 14px;
+            line-height: 32px;
+            letter-spacing: -1.2px;
+            color: white;
+            text-transform: uppercase;
+            background-image: url('icon/card.png');
+            background-position-x: 12px;
+            width: 166px;
+        }
+    </style>
+</head>
+<body>
+    <section class="products">
+        <h2 class="products-title">New Collection</h2>
+        <div class="products-wrap">
+            <figure class="product-card">
+                <img class="product-img" src="img/category-2.png" alt="1">
+                <figcaption class="product-info">
+                    <span class="product-name">Blue Tshirt</span>
+                    <span class="product-price">26</span>
+                </figcaption>
+            </figure>
+            <figure class="product-card">
+                <img class="product-img" src="img/category-1.png" alt="2">
+                <figcaption class="product-info">
+                    <span class="product-name">Woman Shirt</span>
+                    <span class="product-price">31</span>
+                </figcaption>
+                <div class="product-actions">
+                    <div class="btn-wrap">
+                        <button class="product-actions-btn heart-ico"></button>
+                        <button class="product-actions-btn arrows-ico"></button>
+                        <button class="product-actions-btn clock-ico"></button>
+                        <button class="product-actions-btn card-ico">Add to card</button>
+                    </div>
+                </div>
+            </figure>
+            <figure class="product-card">
+                <img class="product-img" src="img/category-3.png" alt="3">
+                <figcaption class="product-info">
+                    <span class="product-name">Yellow Tshirt</span>
+                    <span class="product-price">21</span>
+                </figcaption>
+            </figure>
+            <figure class="product-card">
+                <img class="product-img" src="img/category-4.png" alt="4">
+                <figcaption class="product-info">
+                    <span class="product-name">Cool Lingerie</span>
+                    <span class="product-price">56</span>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+</body>
+</html>

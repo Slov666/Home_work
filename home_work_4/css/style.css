@@ -1,5 +1,4 @@
 html {
-  box-sizing: content-box;
 }
 *,
 *::before *::after {
@@ -7,6 +6,9 @@ html {
 }
 * {
   outline: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .visually-hidden {
   position: absolute;
@@ -21,21 +23,20 @@ html {
   clear: both;
 }
 .container {
-  width: 1600px;
+  width: 1170px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0px 30px;
 }
 body {
   font-family: Roboto, "Open Sans", "Ubuntu";
 }
-/* NAVIGATION */
-.header {
-  padding: 11px 0px 0px 0px;
-  margin: 0 auto;
+section {
+  display: block;
 }
-.nav {
-  margin-bottom: 20px;
-  padding: 0px 192px 0px 195px;
+/* #############################################NAVIGATION */
+.header {
+  padding: 40px 0px 30px 0px;
+  margin: 0 auto;
 }
 .site-navigation-li {
   float: left;
@@ -51,7 +52,10 @@ body {
 .site-navigation-li:hover {
   color: #1abc9c;
 }
-/* LOGO */
+.site-navigation-li:focus {
+  color: #1abc9c;
+}
+/* ################################################# LOGO */
 .logo {
   float: left;
   font-size: 30px;
@@ -69,85 +73,89 @@ body {
   padding: 11px;
   margin: 0 auto;
   float: right;
-  /* BANNER */
+  /* ################################################ BANNER */
 }
-.banner {
-  width: 1600px;
-  min-height: 600px;
+.banner-main {
   background-image: url("/img/slide4.png");
   background-position: center;
   background-size: cover;
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 97px;
+  text-align: center;
+  /*  margin-bottom: 97px; */
 }
-.banner-nav {
-  font-family: Roboto;
-  font-weight: 900;
-  color: #ffffff;
+.banner-position {
+  min-height: 600px;
+  position: relative;
+}
+.banner-titles {
   position: absolute;
-  width: 764px;
-  left: 764px;
-  top: 180px;
-  transform: translateX(-50%) translateY(-50%);
+  text-align: left;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  list-style: none;
+}
+.banner-title {
+  color: #fff;
   font-size: 60px;
   line-height: 82px;
+  padding-bottom: 35px;
+  font-weight: 700;
 }
-.banner-p {
-  position: absolute;
+.banner-subtitle {
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
-  transform: translateX(-50%) translateY(-50%);
-  left: 623px;
-  top: 284px;
   font-weight: 300;
 }
-.banner-box-left {
+.banner-button-left {
+  height: 100px;
+  width: 100px;
+  background: rgba(80, 156, 139, 0.65);
+  transform: translateY(-50%);
+  border: none;
+  font-size: 50px;
+  color: #fff;
   position: absolute;
-  width: 104px;
-  height: 104px;
-  background-color: rgb(78, 198, 171);
-  transform: translateX(-50%) translateY(-50%);
-  left: 248px;
-  top: 280px;
+  top: 50%;
 }
-.banner-box-right {
+.btn-l {
+  left: 30px;
+}
+.banner-button-right {
   position: absolute;
-  width: 104px;
-  height: 104px;
-  background-color: rgb(78, 198, 171);
-  transform: translateX(-50%) translateY(-50%);
-  right: 137px;
-  top: 280px;
+  width: 100px;
+  height: 100px;
+  border: none;
+  font-size: 50px;
+  color: #fff;
+  background: rgba(80, 156, 139, 0.65);
+  transform: translateY(-50%);
+  top: 50%;
 }
-.banner-box-left:hover {
-  background-color: rgba(78, 198, 171, 0.65);
+.btn-r {
+  right: 30px;
+}
+.banner-button-left:hover {
+  background-color: rgba(78, 198, 171);
   cursor: pointer;
 }
-.banner-box-right:hover {
-  background-color: rgba(78, 198, 171, 0.65);
+.banner-button-right:hover {
+  background-color: rgba(78, 198, 171);
   cursor: pointer;
 }
-.banner1 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 100px;
-  line-height: 11px;
-  color: #ffffff;
+.banner-button-left:focus {
+  background-color: rgba(78, 198, 171);
+  cursor: pointer;
 }
-.banner2 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 100px;
-  line-height: 11px;
-  color: #ffffff;
+.banner-button-right:focus {
+  background-color: rgba(78, 198, 171);
+  cursor: pointer;
 }
-/* H2 */
+
+/* ################################################## H2 */
+.card-section {
+  background: #e9f0fd;
+}
 .h2 {
   font-size: 48px;
   line-height: 32px;
@@ -157,7 +165,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 82px;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 .h2::after {
   content: "";
@@ -168,17 +177,15 @@ body {
   margin: 0 auto;
   margin-top: 30px;
 }
-/* CARD */
+/* #################################################### CARD */
 .card {
-  list-style: none;
   margin: 0 auto;
-  padding: 0px 30px 0px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .card-person {
   position: relative;
   width: 255px;
-  height: 322px;
+  min-height: 322px;
   margin: 0 auto;
   margin-right: 29px;
 
@@ -187,39 +194,64 @@ body {
 .card-person:last-child {
   margin-right: 0px;
 }
-.card-hover {
+.card-person:hover .hover-box {
   position: absolute;
-  width: 255px;
-  height: 289px;
-  opacity: 0;
-  background-color: #ffffff;
+  width: 100%;
+  min-height: 285px;
+  top: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.55);
+  border: 10px solid rgba(255, 255, 255, 0.55);
+  visibility: visible;
+  padding-top: 80px;
+  
 }
-.card-hove:hover .card-person {
-  opacity: 0.55;
+.card-person:focus .hover-box {
+  position: absolute;
+  width: 100%;
+  min-height: 285px;
+  top: 0;
+  position: absolute;
+  background: rgba(0, 0, 0), 0.55;
+  border: 10px solid rgba(255, 255, 255, 0.55);
+  visibility: visible;
+  padding-top: 80px;
 }
-.card-hover:hover .product-item {
-  opacity: 0.55;
+.hover-box {
+  width: 100%;
+  min-height: 285px;
+  position: absolute;
+  background: rgba(0, 0, 0), 0.55;
+  top: 0;
+  visibility: hidden;
 }
-.card-hover:hover .product-cost {
-  opacity: 0.55;
+.product-img {
+  width: 100%;
+  height: auto;
+}
+.product-info {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 .product-item {
   position: absolute;
-  bottom: -34px;
-  left: 100px;
-  transform: translateX(-50%) translateY(-50%);
-  width: 200px;
+  padding: 4px 0px 4px;
+  bottom: 0;
+  width: 202px;
   font-size: 18px;
   line-height: 32px;
   background-color: #323232;
   color: #ffffff;
 }
+.product-cost::before {
+  content: "\0024";
+}
 .product-cost {
   display: inline-block;
   position: absolute;
-  bottom: -34px;
-  right: -26px;
-  transform: translateX(-50%) translateY(-50%);
+  padding: 4px 0px 4px;
+  bottom: 0;
+  right: 0;
   width: 53px;
   font-size: 18px;
   line-height: 32px;
@@ -227,7 +259,60 @@ body {
   color: #ffffff;
   text-align: center;
 }
-/* FOOTER */
+/* ########################################### ICON */
+.button-hover {
+min-width: 100%;
+height: auto;
+}
+.button-ico {
+  display: inline-block;
+  width: 48px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #fff;
+  margin: 0px 8px 8px 0px;
+
+
+}.icon-heart{
+  margin-left: 30px;
+}
+.icon-card{
+  margin-left: 30px;
+}
+.icon-heart,
+.icon-arrow,
+.icon-clock,
+.icon-card {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-heart {
+  background-image: url("/icon/heart.png");
+}
+.icon-arrow {
+  background-image: url("/icon/arrows.png");
+}
+.icon-clock {
+  background-image: url("/icon/clock.png");
+}
+.icon-card {
+  color: #fff;
+  width: 168px;
+  text-transform: uppercase;
+  background-image: url("/icon/card.png");
+  text-align: right;
+  background-position-x: 10px;
+  padding: 8px;
+}
+
+.icon-heart:hover,
+.icon-arrow:hover,
+.icon-clock:hover,
+.icon-card:hover {
+  background-color: #1abc9c;
+}
+/* ########################################### FOOTER */
+
 .footer-p {
   background-color: #323232;
   background-size: cover;
