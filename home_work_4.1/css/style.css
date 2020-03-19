@@ -201,12 +201,12 @@ section {
 .product-info {
   position: absolute;
   bottom: 0;
+  color: #fff;
 }
 .product-item {
   display: inline-block;
   font-size: 18px;
   line-height: 32px;
-  color: #fff;
   background-color: #323232;
   width: 195px;
   height: 28px;
@@ -224,7 +224,7 @@ section {
   vertical-align: middle;
   text-align: center;
 }
-.product-cost::after{
+.product-cost::before{
   content: "\0024";
 }
 /* #################################### ICON */
