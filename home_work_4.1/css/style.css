@@ -85,9 +85,6 @@ section {
   color: #1abc9c;
 }
 /* ##################################### BANER */
-.banner-section {
-  padding: 0px 0px 98px 0px;
-}
 .banner-main {
   background-image: url(../img/slide4.png);
   background-position: center;
@@ -158,7 +155,8 @@ section {
 }
 /* ########################################## SECTION CARD */
 .card-section{
-  padding: 0px 0px 100px;
+  padding: 100px 0px 100px;
+  background-color: #e9f0fd;
 }
 .card {
 }
