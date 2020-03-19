@@ -155,6 +155,7 @@ section {
 /* ################################################## H2 */
 .card-section {
   background: #e9f0fd;
+  padding: 100px 0px 100px
 }
 .h2 {
   font-size: 48px;
@@ -165,8 +166,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 .h2::after {
   content: "";
