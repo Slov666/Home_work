@@ -5,10 +5,13 @@ html {
   box-sizzing: inherit;
 }
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+:root {
+  --ten-pix: 10px;
 }
 .visually-hidden {
   position: absolute;
@@ -80,7 +83,6 @@ section {
   background-position: center;
   background-size: cover;
   text-align: center;
-  /*  margin-bottom: 97px; */
 }
 .banner-position {
   min-height: 600px;
@@ -196,26 +198,35 @@ section {
 }
 .card-person:hover .hover-box {
   position: absolute;
-  width: 100%;
-  min-height: 285px;
+  width: 235px;
+  min-height: 265px;
   top: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.55);
-  border: 10px solid rgba(255, 255, 255, 0.55);
+  /*  border: 10px solid rgba(255, 255, 255, 0.55); */
   visibility: visible;
   padding-top: 80px;
-  
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .card-person:focus .hover-box {
-  position: absolute;
-  width: 100%;
-  min-height: 285px;
+  width: 235px;
+  min-height: 265px;
   top: 0;
   position: absolute;
-  background: rgba(0, 0, 0), 0.55;
   border: 10px solid rgba(255, 255, 255, 0.55);
+  background: rgba(0, 0, 0, 0.55);
   visibility: visible;
   padding-top: 80px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.card-person:hover .border-box {
+  width: 100%;
+  min-height: 285px;
+  position: absolute;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.55);
 }
 .hover-box {
   width: 100%;
@@ -259,10 +270,16 @@ section {
   color: #ffffff;
   text-align: center;
 }
+.product-item:hover {
+  background-color: #1abc9c;
+}
+.product-cost:hover {
+  background-color: #7fd9c7;
+}
 /* ########################################### ICON */
 .button-hover {
-min-width: 100%;
-height: auto;
+  min-width: 100%;
+  height: auto;
 }
 .button-ico {
   display: inline-block;
@@ -271,12 +288,11 @@ height: auto;
   background: transparent;
   border: 1px solid #fff;
   margin: 0px 8px 8px 0px;
-
-
-}.icon-heart{
+}
+.icon-heart {
   margin-left: 30px;
 }
-.icon-card{
+.icon-card {
   margin-left: 30px;
 }
 .icon-heart,
