@@ -32,6 +32,7 @@ html {
 }
 body {
   font-family: Roboto, "Open Sans", "Ubuntu";
+  letter-spacing: -0.02em;
 }
 section {
   display: block;
@@ -79,7 +80,7 @@ section {
   /* ################################################ BANNER */
 }
 .banner-main {
-  background-image: url("/img/slide4.png");
+  background-image: url("./img/slide4.png");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -203,7 +204,6 @@ section {
   top: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.55);
-  /*  border: 10px solid rgba(255, 255, 255, 0.55); */
   visibility: visible;
   padding-top: 80px;
   margin-top: 10px;
@@ -241,7 +241,6 @@ section {
   height: auto;
 }
 .product-info {
-  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 .product-item {
@@ -251,6 +250,7 @@ section {
   width: 202px;
   font-size: 18px;
   line-height: 32px;
+  letter-spacing: 0.02em;
   background-color: #323232;
   color: #ffffff;
 }
@@ -303,19 +303,19 @@ section {
   background-position: center;
 }
 .icon-heart {
-  background-image: url("/icon/heart.png");
+  background-image: url("./icon/heart.png");
 }
 .icon-arrow {
-  background-image: url("/icon/arrows.png");
+  background-image: url("./icon/arrows.png");
 }
 .icon-clock {
-  background-image: url("/icon/clock.png");
+  background-image: url("./icon/clock.png");
 }
 .icon-card {
   color: #fff;
   width: 168px;
   text-transform: uppercase;
-  background-image: url("/icon/card.png");
+  background-image: url("./icon/card.png");
   text-align: right;
   background-position-x: 10px;
   padding: 8px;
