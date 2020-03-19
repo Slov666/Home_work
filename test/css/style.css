@@ -88,14 +88,11 @@ section {
   background-position: center;
   background-size: cover;
   text-align: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  position: relative;
+  min-height: 600px;
 }
 .banner-position {
-  position: absolute;
-
-  
+  min-height: 600px;
+  position: relative;
 }
 /* .benner-ul{
   position: absolute;
