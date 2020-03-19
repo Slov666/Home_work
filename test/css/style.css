@@ -6,7 +6,7 @@ html {
   box-sizzing: inherit;
 }
 * {
-  outline: 1px solid red;
+/*   outline: 1px solid red; */
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -43,7 +43,8 @@ section {
 .container {
   width: 1170px;
   margin: 0 auto;
-  padding: 0px;}
+  padding: 0px;
+}
 /* ################################ ##LOGO */
 .logo {
   text-transform: uppercase;
@@ -84,6 +85,9 @@ section {
   color: #1abc9c;
 }
 /* ##################################### BANER */
+.banner-section {
+  padding: 0px 0px 98px 0px;
+}
 .banner-main {
   background-image: url(../img/slide4.png);
   background-position: center;
@@ -94,17 +98,197 @@ section {
   min-height: 600px;
   position: relative;
 }
-.banner-ul{
+.banner-ul {
   position: absolute;
+  min-width: 800px;
   top: 50%;
   left: 50%;
-  translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  text-align: left;
 }
-.btn-l{
+.banner-title {
+  font-size: 60px;
+  line-height: 82px;
+  font-weight: 700;
+  padding-bottom: 35px;
+}
+.banner-subtitle {
+  font-size: 24px;
+  line-height: 54px;
+  font-weight: 300;
+}
+.button {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  background-color: rgba(85, 162, 144, 0.555);
+  border: none;
+  font-size: 60px;
+  color: #fff;
+}
+.btn-l {
   left: 0;
 }
-.btn-r{
-  position: absolute;
+.btn-r {
   right: 0;
+}
+.button:hover {
+  background-color: #1abc9c;
+}
+/* #################################### TITLE PRODUCT */
+.title-product {
+  font-size: 48px;
+  line-height: 32px;
+  color: #555252;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.title-product::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 6px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* ########################################## SECTION CARD */
+.card-section{
+  padding: 0px 0px 100px;
+}
+.card {
+}
+.card-person {
+  margin-left: 30px;
+  float: left;
+  position: relative;
+  font-size: 0px;
+}
+.card-person:last-child {
+  padding: 0px;
+}
+/* .card-person:hover */
+.card-person:hover .card-border {
+  width: 235px;
+  height: 264px;
+  position: absolute;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.55);
+}
+.card-person:hover .card-hover {
+  visibility: visible;
+}
+.product-item:hover{
+  background-color: #1abc9c;
+}
+.product-cost:hover{
+  background-color: #7fd9c7;
+}
+.card-hover {
+  width: 235px;
+  height: 264px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.55);
+  visibility: hidden;
+}
+/* #########PRODUCT */
+.product-info {
+  position: absolute;
+  bottom: 0;
+}
+.product-item {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  background-color: #323232;
+  width: 195px;
+  height: 28px;
+  padding: 0px 0px 10px 10px;
+  vertical-align: middle;
+}
+.product-cost {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: #8c8c8c;
+  width: 50px;
+  height: 34px;
+  padding: 4px 0px 0px 0px;
+  vertical-align: middle;
+  text-align: center;
+}
+.product-cost::after{
+  content: "\0024";
+}
+/* #################################### ICON */
+.button-icon{
+  padding: 80px 0px 0px 0px;
+  margin: 0px 32px
+}
+.btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  background: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 10px 10px 0px
+}
+.icon-heart {
+  background-image: url(/icon/heart.png);
+}
+.icon-arrow {
+  background-image: url(/icon/arrows.png);
+}
+.icon-clock {
+  background-image: url(/icon/clock.png);
+}
+.icon-card {
+  background-image: url(/icon/card.png);
+  width: 170px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  text-align: right;
+  background-position-x: 10px ;
+}
+.icon-clock{
+  margin-right: 0px;
+}
+.icon-heart:hover{
+  background-color: #1abc9c;
+}
+.icon-arrow:hover{
+  background-color: #1abc9c;
+}
+.icon-clock:hover{
+  background-color: #1abc9c;
+}
+.icon-card:hover{
+  background-color: #1abc9c;
+}
+
+
+/* ################################FOOOTER */
+.footer {
+  padding: 40px 0px 36px 0px;
+  background-color: #323232;
+  text-align: center;
+}
+.footer-p {
+  font-style: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+.footer-span {
+  color: #1abc9c;
 }

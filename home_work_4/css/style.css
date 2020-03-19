@@ -274,10 +274,10 @@ section {
   background-color: #7fd9c7;
 }
 /* ########################################### ICON */
-.button-hover {
+/* .button-hover {
   min-width: 100%;
   height: auto;
-}
+} */
 .button-ico {
   display: inline-block;
   width: 48px;
