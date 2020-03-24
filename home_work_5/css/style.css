@@ -295,28 +295,22 @@ img {
     opacity: 1;
     transform: translateX(-10px) translateY(-10px);
     box-shadow: 10px 10px 0px rgb(149, 225, 211);
-/*     background-image: -webkit-linear-gradient(
-      90deg,
-      rgba(252, 227, 138, 0.9) 0%,
-      rgba(243, 129, 129, 0.9) 100%
-      );
-  */
   }
-  .man1:hover{
+  .photo-card:hover .man1{
     background-image: -webkit-linear-gradient(
       90deg,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%
       ), url(../img/man1.png);
   }
-  .man2:hover{
+  .photo-card:hover .man2{
     background-image: -webkit-linear-gradient(
       90deg,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%
       ), url(../img/man2.png);
   }
-  .man3:hover{
+  .photo-card:hover .man3{
     background-image: -webkit-linear-gradient(
       90deg,
       rgba(252, 227, 138, 0.9) 0%,
