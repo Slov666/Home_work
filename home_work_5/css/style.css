@@ -1,6 +1,10 @@
 html {
   box-sizing: content-box;
 }
+*,
+*::before *::after {
+  box-sizzing: inherit;
+}
 body {
   font-family: "Kaushan Script", cursive;
   font-family: "Montserrat", sans-serif;
@@ -10,6 +14,7 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  box-sizing: inherit;
 }
 .visually-hidden {
   position: absolute;
@@ -33,7 +38,7 @@ img {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   min-height: 66px;
   flex-wrap: wrap;
 }
@@ -65,8 +70,9 @@ img {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  width: 490px;
+  flex-basis: 490px;
   font-family: "Montserrat", sans-serif;
+  height: 40px;
 }
 .Ab:hover,
 .Se:hover,
@@ -75,9 +81,6 @@ img {
 .Co:hover {
   transform: scale(1.2);
   transition: 0.2s linear;
-}
-.site-navigation-li a {
-  transition: color 200ms linear;
 }
 .site-navigation-li {
   animation: site-navigation 0.6s linear;
@@ -97,12 +100,15 @@ img {
   line-height: 17px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color 200ms linear;
+  height: 100%;
 }
 .site-navigation-li:hover .site-navigation-a {
   color: #f38181;
+  border-bottom: 3px solid #f38181 ; 
 }
 
-.site-navigation-li::after {
+/* .site-navigation-li::after {
   content: "";
   display: block;
   background-color: #f38181;
@@ -110,8 +116,8 @@ img {
   margin-top: 10px;
   visibility: hidden;
 }
-
-.site-navigation-li,
+ */
+/* .site-navigation-li,
 .Ab:hover::after {
   visibility: visible;
   width: 51px;
@@ -135,7 +141,7 @@ img {
 .Co:hover::after {
   visibility: visible;
   width: 68px;
-}
+} */
 /* ############################################TITLE ########## H2*/
 .work-h2 {
   text-align: center;
@@ -143,6 +149,7 @@ img {
   line-height: 29px;
   padding: 120px 0px 24px;
   animation: work-h2 0.6s linear;
+  font-family: "Kaushan Script", cursive;
 }
 
 @keyframes work-h2 {
@@ -258,7 +265,7 @@ img {
   background-image: url(../img/decor/computer.png);
   content: "";
 }
-.BOOK::before {
+.book::before {
   background-image: url(../img/decor/BOOK.png);
   content: "";
 }
@@ -266,7 +273,7 @@ img {
   background-image: url(../img/decor/home.png);
   content: "";
 }
-.DIGTAL::before {
+.digtal::before {
   background-image: url(../img/decor/DIGTAL.png);
   content: "";
 }
@@ -315,7 +322,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: box-shadow 200ms linear, transform 200ms linear, backgtound-image 200ms linear, opacity 200ms linear,
+  transition: box-shadow 200ms linear, transform 200ms linear, background-image 200ms linear, opacity 200ms linear,
   top 200ms linear, left 200ms linear;
   }
   
@@ -323,12 +330,12 @@ img {
     opacity: 1;
     transform: translateX(-10px) translateY(-10px);
     box-shadow: 10px 10px 0px rgb(149, 225, 211);
-    background-image: -webkit-linear-gradient(
+/*     background-image: -webkit-linear-gradient(
       90deg,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%
       );
- 
+  */
   }
   .man1:hover{
     background-image: -webkit-linear-gradient(
