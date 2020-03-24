@@ -169,7 +169,6 @@ section {
 .card-person:last-child {
   padding: 0px;
 }
-/* .card-person:hover */
 .card-person:hover .card-border {
   width: 235px;
   height: 264px;

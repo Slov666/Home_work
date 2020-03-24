@@ -1,0 +1,355 @@
+html {
+  box-sizing: content-box;
+}
+body {
+  font-family: "Kaushan Script", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  /*  outline: 1px solid red; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+/* #################SITE NAVVIGATION */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  flex-wrap: wrap;
+}
+.logo {
+  font-family: "Montserrat", sans-serif;
+  color: #95e1d3;
+  font-size: 30px;
+  line-height: 36px;
+  text-decoration: none;
+  font-weight: 700;
+  animation: logo 0.6s linear;
+}
+@keyframes logo {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.logo:hover {
+  color: #f38181;
+  transition: color 200ms linear;
+  transform: scale(1.1);
+  transition: 0.2s linear;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 490px;
+  font-family: "Montserrat", sans-serif;
+}
+.Ab:hover,
+.Se:hover,
+.Wo:hover,
+.Bl:hover,
+.Co:hover {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+.site-navigation-li a {
+  transition: color 200ms linear;
+}
+.site-navigation-li {
+  animation: site-navigation 0.6s linear;
+}
+@keyframes site-navigation {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.site-navigation-li a {
+  color: #95e1d3;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.site-navigation-li:hover .site-navigation-a {
+  color: #f38181;
+}
+
+.site-navigation-li::after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  height: 3px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.site-navigation-li,
+.Ab:hover::after {
+  visibility: visible;
+  width: 51px;
+}
+.site-navigation-li,
+.Se:hover::after {
+  visibility: visible;
+  width: 61px;
+}
+.site-navigation-li,
+.Wo:hover::after {
+  visibility: visible;
+  width: 49px;
+}
+.site-navigation-li,
+.Bl:hover::after {
+  visibility: visible;
+  width: 43px;
+}
+.site-navigation-li,
+.Co:hover::after {
+  visibility: visible;
+  width: 68px;
+}
+/* ############################################TITLE */
+.work-h2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 120px 0px 24px;
+}
+.work-h2:hover {
+  text-shadow: 1px 1px 0 #ffe3bd, 2px 2px 0 #ffe3bd, 3px 3px 0 #ffe3bd,
+    4px 4px 0 #ffe3bd, 5px 5px 0 #ffe3bd;
+}
+.work-h2,
+.services-h2 {
+  transition: 0.5s ease-in-out;
+}
+.services-h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.services-h2:hover {
+  text-shadow: 1px 1px 0 #ffe3bd, 2px 2px 0 #ffe3bd, 3px 3px 0 #ffe3bd,
+    4px 4px 0 #ffe3bd, 5px 5px 0 #ffe3bd;
+}
+.services-h2::after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  width: 61px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+.title-h2 {
+  padding-bottom: 64px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* ###################################### SECTION FEATURES */
+.features {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.features-list {
+  flex-basis: 380px;
+  position: relative;
+}
+
+.features-list:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 105px;
+}
+
+.title-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0px 0px 12px 50px;
+}
+.title-subtext {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  margin: 0px 0px 0px 50px;
+}
+.icon::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+.ALARM::before {
+  background-image: url(/img/decor/ALARM.png);
+  content: "";
+}
+.web-design::before {
+  background-image: url(/img/decor/web-design.png);
+  content: "";
+}
+.computer::before {
+  background-image: url(/img/decor/computer.png);
+  content: "";
+}
+.BOOK::before {
+  background-image: url(/img/decor/BOOK.png);
+  content: "";
+}
+.home::before {
+  background-image: url(/img/decor/home.png);
+  content: "";
+}
+.DIGTAL::before {
+  background-image: url(/img/decor/DIGTAL.png);
+  content: "";
+}
+/* ################################### SECTION CARDS */
+.last-section {
+  padding-bottom: 82px;
+}
+.subtext {
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+.photo {
+  display: flex;
+  justify-content: space-around;
+}
+.card-title {
+  display: flex;
+  align-items: flex-end;
+}
+.photo-card {
+  text-align: center;
+}
+.photo-img {
+  padding-bottom: 30px;
+}
+.photo-img:hover {
+  transform: translateX(-10px) translateY(-10px);
+}
+.photo-card {
+  position: relative;
+}
+
+.hover-box {
+  position: absolute;
+  top: 0;
+  height: 470px;
+  width: 380px;
+}
+.hover-box:hover {
+  transform: translateX(-10px) translateY(-10px);
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.8) 0%,
+    rgba(243, 129, 129, 0.8) 100%
+  );
+}
+.photo-img:hover .hover-box {
+  transform: translateX(-10px) translateY(-10px);
+}
+.card-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  padding-bottom: 14px;
+}
+.card-job {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}
+
+/* ####################################### FOOTER */
+.footer {
+  display: flex;
+  min-height: 64px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-title {
+  font-size: 14px;
+  line-height: 16px;
+}
+.span {
+  color: #f38181;
+}
+.input {
+}
+.button {
+  background-color: #95e1d3;
+  width: 150px;
+  border: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button:hover {
+  border: 1px solid #333333;
+  transition: 0.2s linear;
+}
+.input-box {
+  display: flex;
+  text-align: center;
+  height: 40px;
+  position: relative;
+}
+.decor {
+  position: relative;
+}
+.decor::before {
+  position: absolute;
+  content: "";
+  background-color: #e5e5e5;
+  width: 1251px;
+  height: 1px;
+  top: 0;
+  right: 0;
+}
+.input:hover {
+  color: #f38181;
+}
