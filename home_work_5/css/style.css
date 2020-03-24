@@ -429,19 +429,9 @@ img {
   height: 40px;
   position: relative;
 }
-.decor {
+.border{
   border-top: 1px solid #e5e5e5;
-/*   position: relative; */
 }
-/* .decor::before {
-  position: absolute;
-  content: "";
-  background-color: #e5e5e5;
-  width: 1251px;
-  height: 1px;
-  top: 0;
-  right: 0;
-} */
 .input:hover {
   color: #f38181;
 }
