@@ -72,7 +72,7 @@ img {
   list-style-type: none;
   flex-basis: 490px;
   font-family: "Montserrat", sans-serif;
-  height: 40px;
+  min-height: 40px;
 }
 .Ab:hover,
 .Se:hover,
@@ -100,48 +100,14 @@ img {
   line-height: 17px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: color 200ms linear;
+  transition: color 200ms linear, border 200ms linear;
   height: 100%;
+  display: block;
 }
 .site-navigation-li:hover .site-navigation-a {
   color: #f38181;
   border-bottom: 3px solid #f38181 ; 
 }
-
-/* .site-navigation-li::after {
-  content: "";
-  display: block;
-  background-color: #f38181;
-  height: 3px;
-  margin-top: 10px;
-  visibility: hidden;
-}
- */
-/* .site-navigation-li,
-.Ab:hover::after {
-  visibility: visible;
-  width: 51px;
-}
-.site-navigation-li,
-.Se:hover::after {
-  visibility: visible;
-  width: 61px;
-}
-.site-navigation-li,
-.Wo:hover::after {
-  visibility: visible;
-  width: 49px;
-}
-.site-navigation-li,
-.Bl:hover::after {
-  visibility: visible;
-  width: 43px;
-}
-.site-navigation-li,
-.Co:hover::after {
-  visibility: visible;
-  width: 68px;
-} */
 /* ############################################TITLE ########## H2*/
 .work-h2 {
   text-align: center;
@@ -288,7 +254,6 @@ img {
   font-size: 15px;
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
-  width: ;
   animation: subtext 0.6s linear;
 }
 @keyframes subtext {
@@ -412,8 +377,6 @@ img {
 }
 .span {
   color: #f38181;
-}
-.input {
 }
 .button {
   background-color: #95e1d3;
