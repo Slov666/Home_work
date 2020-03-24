@@ -329,6 +329,7 @@ img {
   }
   .social-icon:hover{
     background-color: #95e1d3;
+    cursor: pointer;
   }
   .social-icon:nth-child(-n +3){
     margin-right: 1px;
