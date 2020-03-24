@@ -216,27 +216,27 @@ img {
   left: 0;
 }
 .ALARM::before {
-  background-image: url(/img/decor/ALARM.png);
+  background-image: url(../img/decor/ALARM.png);
   content: "";
 }
 .web-design::before {
-  background-image: url(/img/decor/web-design.png);
+  background-image: url(../img/decor/web-design.png);
   content: "";
 }
 .computer::before {
-  background-image: url(/img/decor/computer.png);
+  background-image: url(../img/decor/computer.png);
   content: "";
 }
 .BOOK::before {
-  background-image: url(/img/decor/BOOK.png);
+  background-image: url(../img/decor/BOOK.png);
   content: "";
 }
 .home::before {
-  background-image: url(/img/decor/home.png);
+  background-image: url(../img/decor/home.png);
   content: "";
 }
 .DIGTAL::before {
-  background-image: url(/img/decor/DIGTAL.png);
+  background-image: url(../img/decor/DIGTAL.png);
   content: "";
 }
 /* ################################### SECTION CARDS */
