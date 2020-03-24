@@ -136,12 +136,22 @@ img {
   visibility: visible;
   width: 68px;
 }
-/* ############################################TITLE */
+/* ############################################TITLE ########## H2*/
 .work-h2 {
   text-align: center;
   font-size: 24px;
   line-height: 29px;
   padding: 120px 0px 24px;
+  animation: work-h2 0.6s linear;
+}
+
+@keyframes work-h2 {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .work-h2:hover {
   text-shadow: 1px 1px 0 #ffe3bd, 2px 2px 0 #ffe3bd, 3px 3px 0 #ffe3bd,
@@ -158,6 +168,15 @@ img {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  animation: services-h2 0.6s linear;
+}
+@keyframes services-h2 {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .services-h2:hover {
   text-shadow: 1px 1px 0 #ffe3bd, 2px 2px 0 #ffe3bd, 3px 3px 0 #ffe3bd,
@@ -184,6 +203,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  animation: features 0.6s linear;
+}
+@keyframes features {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .features-list {
   flex-basis: 380px;
@@ -205,7 +233,9 @@ img {
   line-height: 24px;
   color: #999999;
   margin: 0px 0px 0px 50px;
+ 
 }
+
 .icon::before {
   content: "";
   display: block;
@@ -248,7 +278,16 @@ img {
   font-size: 15px;
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
+  animation: subtext 0.6s linear;
 }
+  @keyframes subtext {
+    0% {
+      transform: translateY(-200px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 .photo {
   display: flex;
   justify-content: space-around;
