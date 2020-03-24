@@ -238,11 +238,12 @@ img {
 
 .icon::before {
   content: "";
-  display: block;
+  display: inline-block;
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
   position: absolute;
+  top: 0;
   left: 0;
 }
 .ALARM::before {
