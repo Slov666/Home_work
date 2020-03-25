@@ -100,7 +100,7 @@ img {
 }
 .lorem {
   font-size: 14px;
-  margin: auto;
+  margin: 0 auto;
 }
 .button {
   font-family: "Playfair Display";

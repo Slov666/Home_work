@@ -1,0 +1,122 @@
+html {
+    box-sizing: content-box;
+}
+
+*,
+*::before *::after {
+    box-sizzing: inherit;
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    outline: 1px solid red;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: "Montserrat", sans-serif, ;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ###################################### SITE NAVIGATION */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #95e1d3;
+    font-size: 30px;
+    line-height: 36px;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    flex-basis: 490px;
+    min-height: 40px;
+    flex-wrap: wrap;
+}
+
+.site-navigation-li a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #95e1d3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    height: 100%;
+    transition: color 200ms linear, border 200ms linear;
+}
+
+.site-navigation-li a:hover {
+    color: #f38181;
+    border-bottom: 3px solid #f38181;
+}
+/* ########################### TITLE H2 */
+.work-h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "Kaushan Script", cursive;
+    /* padding: 120px 0px 24px; */
+}
+
+.services-h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.services-h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.title{
+    padding-top: 120px;
+    padding-bottom: 65px;
+    
+}

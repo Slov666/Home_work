@@ -219,7 +219,7 @@ img {
   top: 0;
   left: 0;
 }
-.ALARM::before {
+.alarm::before {
   background-image: url(../img/decor/ALARM.png);
   content: "";
 }
