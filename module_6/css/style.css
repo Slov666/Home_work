@@ -228,7 +228,7 @@ img {
   content: "";
 }
 .computer::before {
-  background-image: url(../img/decor/computer.png);
+  background-image: url(../img/decor/COMPUTER.png);
   content: "";
 }
 .book::before {
@@ -236,7 +236,7 @@ img {
   content: "";
 }
 .home::before {
-  background-image: url(../img/decor/home.png);
+  background-image: url(../img/decor/HOME.png);
   content: "";
 }
 .digtal::before {
