@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+    box-sizzing: inherit;
+    padding: 0;
+    margin: 0 auto;
+}
+
+* {
+    outline: 1px solid red;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+body {
+    font-family: "Playfair Display", "Ubuntu";
+    color: #626262;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ############# SITE NAVIGATION */
+.nav {
+    min-height: 190px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.site-navigation-li a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    min-height:40px ;
+
+    transition: color 300ms ease-in-out, border 300ms ease-in-out;
+    animation: zoomIn 400ms ease-in;
+}
+
+.site-navigation-li a:hover {
+    color: #95e1d3;
+    border-bottom: 3px solid #95e1d3 ;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* ############### FEATURES */
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.features-list {
+    width: 420px;
+    padding-bottom: 146px;
+}
+.features-list:nth-last-child(-n+2){
+    padding-bottom: 0px ;
+}
+.features-img {
+    width: 420px;
+    min-height: 320px;
+    padding-bottom: 32px;
+}
+
+.title-one {
+    font-family: "Ubuntu";
+    margin: 0 auto;
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+.title-two {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+.title-main{
+    margin: 0 auto;
+}
+
+/*  ###################### BUTTON */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.footer-button {
+    width: 160px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    transition: transform 400ms linear, color 400ms linear;
+}
+
+.footer-button:hover {
+    transform: scale(1.15);
+    color: red;
+}

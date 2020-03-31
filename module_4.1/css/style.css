@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+    box-sizzing: inherit;
+}
+
+* {
+    outline: 1px solid red;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+body {
+    font-family: "Open Sans", "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$ SITE NAVIGATION */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 126px;
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 32px;
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a.logo::first-letter {
+    color: rgb(26, 188, 156);
+    font-weight: bold;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 490px;
+    list-style: none;
+    padding: 0;
+}
+
+.site-navigation-li a {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #140707;
+    display: block;
+    transition: color 200ms ease-in-out;
+}
+.site-navigation-li a:hover {
+    color: #1abc9c;
+}
+
+/* ############################ H2 MAIN TITLE */
+
+.main-title {
+    font-size: 48px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #515151;
+    text-align: center;
+    padding-bottom: 90px;
+    margin: 0 auto;
+}
+
+.main-title::after {
+    content: "";
+    display: block;
+    background-color: #1abc9c;
+    width: 160px;
+    height: 8px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* #################################PRODUT CARD*/
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 95px;
+}
+
+.product-card {
+    list-style: none;
+    width: 255px;
+    min-height: 322px;
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+}
+
+.product-card:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.product-card:last-child {
+    margin-right: 0px;
+}
+
+.product-card:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 30px;
+}
+
+.product-name {
+    position: absolute;
+    width: 201px;
+    background-color: #323232;
+    margin: 0 auto;
+    padding: 9px;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: background 200ms ease-in-out;
+}
+
+.product-cost {
+    position: absolute;
+    width: 34px;
+    background-color: #8c8c8c;
+    color: #fff;
+    margin: 0 auto;
+    padding: 7px 11px 11px 14px;
+    bottom: 0;
+    right: 0;
+    transition: background  200ms ease-in-out;
+}
+
+.product-cost::before {
+    content: "\0024";
+}
+
+.product-card:hover .product-name {
+    background-color: #1abc9c;
+}
+
+.product-card:hover .product-cost {
+    background-color: #7fd9c7;
+}
+/* ############################# NEWS */
+.news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    padding-bottom: 81px;
+}
+.news-card{
+    width: 350px;
+    min-height: 482px;
+}
+.news-img{
+    padding-bottom: 16px;
+}
+.news-title{
+    margin: 0 auto;
+    padding-bottom: 46px;
+}
+.news-title-two{
+    margin: 0 auto;
+    padding-bottom: 18px;
+}
+.news-button{
+    background-color: #4ec6ab;
+    color: #fff;
+    width: 160px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+}

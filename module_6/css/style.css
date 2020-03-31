@@ -325,7 +325,7 @@ img {
     background-color: #fce38a;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-color 200ms linear;
+    transition: background 200ms linear;
   }
   .social-icon:hover{
     background-color: #95e1d3;
@@ -373,7 +373,7 @@ img {
 .span {
   color: #f38181;
 }
-.button {
+.btn {
   background-color: #95e1d3;
   width: 150px;
   border: 0;
@@ -385,15 +385,19 @@ img {
   justify-content: center;
   cursor: pointer;
 }
-.button:hover {
+.btn:hover {
   border: 1px solid #333333;
   transition: 0.2s linear;
 }
+.input{
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+flex-basis: 230px;
+padding: 10px 0px;
+border: 1px solid rgb(229, 229, 229)
+}
 .input-box {
   display: flex;
-  text-align: center;
-  height: 40px;
-  position: relative;
 }
 .border{
   border-top: 1px solid #e5e5e5;

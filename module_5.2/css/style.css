@@ -1,0 +1,312 @@
+html {
+  box-sizing: content-box;
+}
+
+*,
+*::before *::after {
+  box-sizzing: inherit;
+}
+
+* {
+  /*   outline: 1px solid red; */
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+body {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  color: #555252;
+  list-style: none;
+  letter-spacing: -0.02em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+/* ################################ SITE NAVIGATION */
+
+.logo {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+
+.nav {
+  display: flex;
+  min-height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 490px;
+}
+
+.site-navigation-li {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #0f0101;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: color 200ms ease-in-out;
+}
+
+.site-navigation-li:hover {
+  color: #1abc9c;
+}
+
+.site-navigation-li:focus {
+  color: #1abc9c;
+}
+
+/* ####################################### BANER-SlIDER */
+.slider-section {
+  padding-bottom: 98px;
+}
+
+.slider {
+  background-image: url(/img/slide4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-slider {
+  position: relative;
+  min-height: 600px;
+}
+
+.button-slider {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  background-color: rgba(84, 161, 143, 0.55);
+  font-size: 66px;
+  top: 50%;
+  color: #fff;
+  border: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: background 200ms ease-in-out;
+}
+
+.button-slider:hover {
+  background-color: #1abc9c;
+}
+
+.button-slider:focus {
+  background-color: #1abc9c;
+}
+
+.btn-l {
+  left: 0;
+}
+
+.btn-r {
+  right: 0;
+}
+
+.title-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 790px;
+}
+
+.title-text {
+  font-size: 60px;
+  line-height: 82px;
+  font-weight: 800;
+  font-family: "Roboto";
+  color: #fff;
+}
+
+.title-subtext {
+  font-size: 24px;
+  line-height: 54px;
+  font-weight: 300;
+  font-family: "Roboto";
+  color: #fff;
+}
+
+.main-title {
+  font-size: 48px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #515151;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 0px 110px 0px;
+}
+
+.main-title::after {
+  content: "";
+  display: block;
+  width: 165px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.hover-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 235px;
+  height: 266px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  visibility: hidden;
+}
+
+.border-white {
+  position: absolute;
+  top: 0;
+  width: 235px;
+  height: 266px;
+}
+
+.card-person:hover .hover-box {
+  background-color: rgba(0, 0, 0, 0.55);
+  visibility: visible;
+
+}
+
+.card-person:hover .border-white {
+  border: 10px solid rgba(255, 255, 255, 0.55);
+}
+.card-person-li {
+}
+.product-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 191px;
+  background-color: #323232;
+  padding: 7px 0px 7px 14px;
+  color: #fff;
+}
+
+.product-cost {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  background-color: #8c8c8c;
+  color: #fff;
+  padding: 6px 5px 8px 17px;
+}
+.card-person:hover .product-cost {
+  background-color: #1abc9c;
+}
+.card-person:hover .product-name {
+  background-color: #7fd9c7;
+}
+
+.product-cost::before {
+  content: "\0024";
+}
+.card-person-li {
+  display: inline-block;
+  margin: 0px 5px 10px;
+}
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  background: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrows {
+  background-image: url(/img/icon/arrows.png);
+}
+
+.clock {
+  background-image: url(/img/icon/clock.png);
+}
+
+.heart {
+  background-image: url(/img/icon/heart.png);
+}
+
+.ico-card {
+  background-image: url(/img/icon/card.png);
+  width: 175px;
+  background-position-x: 10px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+.card-icon:hover {
+  background-color: #1abc9c;
+}
+/* #################################### FOOTER */
+.footer {
+  min-height: 90px;
+  background-color: #323232;
+  text-align: center;
+
+}
+.footer-title {
+    padding-top: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+}
+.span-color{
+    color: #46bfa9;
+    font-weight: 400;
+}
