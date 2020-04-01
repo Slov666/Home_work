@@ -130,7 +130,7 @@ body {
     line-height: 75px;
     font-weight: 600;
     color: #222222;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -138,7 +138,7 @@ body {
     margin: 0 auto;
     font-size: 16px;
     line-height: 19px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-weight: 600;
 }
 
@@ -214,12 +214,11 @@ body {
 
 .services-title {
     font-size: 18px;
-    line-height: 75px;
-    font-weight: 400;
-    padding-bottom: 16px;
+    line-height: 22px;
     font-weight: 600;
     color: #222222;
     margin: 0 auto;
+    margin-bottom: 22px;
 }
 
 .services-subtitle {
@@ -240,15 +239,17 @@ body {
     min-height: 620px;
     padding-bottom: 114px;
 }
-
-.form-contact {
+.form-request{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+}
+.form-contact {
     list-style: none;
-    height: 246px;
-    margin: 0 auto;
+    display: inline-block;
     padding: 0;
+    width: 481px;
+    margin: 0px;
+    padding-bottom: 27px;
 }
 
 .form-contact-li {
@@ -290,7 +291,7 @@ body {
 }
 .form-button{
     margin: 0 auto;
-    display: inherit;
+    display: inline-block;
     width: 242px;
     height: 66px;
     font-size: 18px;
@@ -301,23 +302,32 @@ body {
     border-radius: 3px;
     border: none;
     cursor: pointer;
+    text-align: center;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+.box-textarea{
+display: inline-block;
+}
+.form-button:hover{
+    background-color: #bff89e;
+    color: #666666;
 }
 
 .form-user-name:focus:invalid{
     background-color: #ffb4b4;
 }
 .form-user-name:focus:valid{
-    background-color: #81e681;
+    background-color: #bff89e;
 }
 .form-user-email:focus:invalid{
     background-color: #ffb4b4;
 }
 .form-user-email:focus:valid{
-    background-color: #81e681;
+    background-color: #bff89e;
 }
 .form-textarea:focus:invalid{
     background-color: #ffb4b4;
 }
 .form-textarea:focus:valid{
-    background-color: #81e681;
+    background-color: #bff89e;
 }
