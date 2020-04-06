@@ -36,7 +36,7 @@ img {
 
 body {
     font-family: "Montserrat", sans-serif;
-    width: 320px;
+    width: 100%;
     color: #333333;
     /* ######################## HEADER */
 }
@@ -237,10 +237,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    body {
-        width: 768px;
-    }
-
     .container {
         width: 678px;
         margin: 0 auto;
@@ -290,9 +286,6 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    body {
-        width: 100%;
-    }
     .container{
         width: 1200px;
     }
