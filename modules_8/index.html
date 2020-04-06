@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,12 +13,15 @@
 <body>
     <header class="header">
         <div class="container">
-            <ul class="site-ul">
-                <li class="site-li"><a class="site-reg" href="#">Login</a></li>
-                <li class="site-li"><a class="site-reg" href="#">Sing up</a></li>
-            </ul>
-            <div class="findHoliday">
+            <div class="site-main">
+                <ul class="site-ul">
+                    <li class="site-li"><a class="site-reg" href="#">Login</a></li>
+                    <li class="site-li"><a class="site-reg" href="#">Sing up</a></li>
+                </ul>
                 <h2 class="findHoliday-title">URLAUBSGLÜCK</h2>
+            </div>
+
+            <div class="findHoliday">
                 <h2 class="findHoliday-big-title">Share your
                     holiday dreams</h2>
                 <p class="findHoliday-subtitle">And find the perfect partner
@@ -27,7 +31,7 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="section-card">
             <div class="container">
                 <h2 class="main-h2">Meet a partner for your
                     best holiday</h2>
@@ -39,7 +43,7 @@
                         <p class="card-name ">Bradley Hunter</p>
                         <p class="card-subtitle">Based in Chicago. I love playing tennis and loud music.</p>
                     </li>
-                    <li class="card-person">
+                    <li class="card-person order-one">
                         <div class="card-box-img icon-chemistry">
                             <img src="/img/people/man2.png" alt="" class="card-img">
                         </div>
@@ -54,7 +58,7 @@
                         <p class="card-name ">Heather Walker</p>
                         <p class="card-subtitle">I'm a happy person that loves cats and climbing on mountains.</p>
                     </li>
-                    <li class="card-person">
+                    <li class="card-person order-two">
                         <div class="card-box-img icon-telegram">
                             <img src="/img/people/woman2.png" alt="" class="card-img">
                         </div>
@@ -63,8 +67,12 @@
                         <p class="card-subtitle">Based in Chicago. I love playing tennis and loud music.</p>
                     </li>
                 </ul>
-                <a class="OtherPartners-link" href="#">See other partners</a>
+
+                <div class="OtherPartners">
+                    <a class="OtherPartners-link" href="#">See other partners</a>
+                </div>
             </div>
+
         </section>
     </main>
 

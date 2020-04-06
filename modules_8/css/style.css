@@ -37,6 +37,7 @@ img {
 body {
     font-family: "Montserrat", sans-serif;
     width: 320px;
+    color: #333333;
     /* ######################## HEADER */
 }
 
@@ -87,7 +88,7 @@ body {
     color: #ffffff;
     margin: 0 auto;
     margin-bottom: 34px;
-
+    text-align: center;
 }
 
 .findHoliday-big-title {
@@ -119,19 +120,25 @@ body {
     height: 40px;
     width: 280px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 /* ##############################  H2*/
 .main-h2 {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 25px;
     padding-top: 61px;
     margin: 0 auto;
     margin-bottom: 18px;
 }
 
 /* ############################## CARD */
+.section-card {
+    padding-bottom: 57px;
+}
+
 .card {
     margin: 0 auto;
     padding: 0;
@@ -153,18 +160,20 @@ body {
     margin: 0 auto;
     margin-bottom: 22px;
     font-weight: bold;
-
+    padding-top: 24px;
 }
 
 .card-subtitle {
+    font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     font-size: 14px;
     line-height: 17px;
     font-weight: 300;
 }
-.card-box-img{
- position: relative;
- display: inline-block;
+
+.card-box-img {
+    position: relative;
+    display: inline-block;
 
 }
 
@@ -181,33 +190,43 @@ body {
     background-position: center;
     border: 4px solid #ffffff;
 }
-.icon-tv::before{
+
+.icon-tv::before {
     content: "";
     background-color: #ff4e50;
-    background-image:url(../img/icon/icon-tv.png);
+    background-image: url(../img/icon/icon-tv.png);
 }
-.icon-chemistry::before{
+
+.icon-chemistry::before {
     content: "";
     background-color: #ffa507;
     background-image: url(../img/icon/icon-chemistry.png);
 }
-.icon-coffe::before{
+
+.icon-coffe::before {
     content: "";
     background-color: #1cd7ad;
     background-image: url(../img/icon/icon-coffe.png);
 }
-.icon-telegram::before{
+
+.icon-telegram::before {
     content: "";
     background-color: #4e73db;
     background-image: url(../img/icon/icon-telegram.png);
 }
+
 /* #############################  */
 
-.OtherPartners-link{
+.OtherPartners {
     border: 2px solid #ff4e50;
     border-radius: 20px;
-    padding: 10px 70px;
+    padding: 6px 70px;
     margin: 0 auto;
+    height: 35px;
+    width: 278px;
+}
+
+.OtherPartners-link {
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -215,4 +234,74 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #ff4e50;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    .container {
+        width: 678px;
+        margin: 0 auto;
+    }
+
+    .header {
+        min-height: 540px;
+        background-image: url(../img/banner-tanlet.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-h2 .card-subtitle {
+        width: 250px;
+    }
+
+    .site-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .site-ul {
+        margin: 0;
+        order: 1;
+    }
+    .findHoliday-title{
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-person {
+        flex-basis: 231px;
+    }
+
+    .order-one {
+        order: 1;
+    }
+
+    .order-two {
+        order: 2;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        width: 100%;
+    }
+    .container{
+        width: 1200px;
+    }
+    .header{
+        background-image: url(../img/banner-desktop.png);
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
 }
