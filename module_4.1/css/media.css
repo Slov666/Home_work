@@ -1,0 +1,148 @@
+@media (min-width: 1025px) {
+    .product-card:nth-child(4n) {
+        margin-right: 0px;
+    }
+
+    .product-card:last-child {
+        margin-right: 0px;
+    }
+
+    .product-card:not(:nth-last-child(-n + 4)) {
+        margin-bottom: 30px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 126px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .site-navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 490px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 95px;
+    }
+
+    .news {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 81px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .container {
+        width: 768px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        min-height: 126px;
+        justify-content: space-around;
+    }
+
+    .site-navigation-li a:active {
+        color: #1abc9c;
+        font-size: ;
+    }
+
+    .main-title {
+        padding-bottom: 50px;
+    }
+
+    .product {
+        padding-bottom: 50px;
+    }
+
+    .product-card {
+        margin-bottom: 40px;
+        margin-right: 40px;
+        transition: box-shadow 200ms ease-in, transform 200ms ease-in;
+    }
+
+    .product-card:active {
+        box-shadow: 1px 1px 20px #000000;
+        transform: scale(1.05);
+    }
+
+    .news-card {
+        padding: 0px 20px;
+
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    .container {
+        width: 320px;
+        padding: 0px 15px;
+    }
+
+    .nav {
+        min-height: 150px;
+    }
+
+    .logo {
+        font-size: 50px;
+        padding: 20px 30px 20px;
+    }
+
+    .site-navigation {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0px 0px 40px 27px;
+    }
+
+    .site-navigation a {
+        font-size: 30px;
+        line-height: 30px;
+
+    }
+
+    .site-navigation-li {
+        margin: 10px 50px 0px 0px;
+        border-bottom: 2px solid #1abc9c;
+    }
+
+    .main-title {
+        font-size: 38px;
+        line-height: 42px;
+        padding-bottom: 40px;
+    }
+
+    .product {
+        margin: 0 auto;
+    }
+
+    .news {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .news-card {
+        width: 290px;
+        margin: 0 auto;
+    }
+}

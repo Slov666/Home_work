@@ -7,9 +7,9 @@ html {
     box-sizzing: inherit;
 }
 
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -39,14 +39,8 @@ img {
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$ SITE NAVIGATION */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 126px;
-}
-
 .logo {
+    display: inline-block;
     font-size: 30px;
     line-height: 32px;
     color: rgb(81, 81, 81);
@@ -61,11 +55,8 @@ a.logo::first-letter {
 }
 
 .site-navigation {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 490px;
     list-style: none;
-    padding: 0;
+    margin: 0 auto;
 }
 
 .site-navigation-li a {
@@ -105,14 +96,7 @@ a.logo::first-letter {
 }
 
 /* #################################PRODUT CARD*/
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-    padding-bottom: 95px;
-}
+
 
 .product-card {
     list-style: none;
@@ -121,20 +105,13 @@ a.logo::first-letter {
     margin-right: 30px;
     position: relative;
     display: flex;
-}
-
-.product-card:nth-child(4n) {
-    margin-right: 0px;
-}
-
-.product-card:last-child {
-    margin-right: 0px;
-}
-
-.product-card:not(:nth-last-child(-n + 4)) {
     margin-bottom: 30px;
+    transition: box-shadow 200ms ease-in, transform 200ms ease-in;
 }
-
+.product-card:hover{
+    box-shadow: 1px 1px 20px #000000;
+    transform: scale(1.05);
+}
 .product-name {
     position: absolute;
     width: 201px;
@@ -171,13 +148,10 @@ a.logo::first-letter {
     background-color: #7fd9c7;
 }
 /* ############################# NEWS */
+
 .news{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
     margin: 0 auto;
-    padding-bottom: 81px;
+    list-style: none;
 }
 .news-card{
     width: 350px;
