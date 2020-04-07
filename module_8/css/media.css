@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+    .container {
+        width: 678px;
+        margin: 0 auto;
+    }
+
+    .header {
+        min-height: 540px;
+        background-image: url(../img/banner-tanlet.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-h2 .card-subtitle {
+        width: 250px;
+    }
+
+    .site-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .site-ul {
+        margin: 0;
+        order: 1;
+    }
+    .findHoliday-title{
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-person {
+        flex-basis: 231px;
+    }
+
+    .order-one {
+        order: 1;
+    }
+
+    .order-two {
+        order: 2;
+    }
+}
+@media (min-width: 960px) {
+    .container{
+        width: 1170px;
+    }
+    .header{
+        background-image: url(../img/banner-desktop.png);
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}

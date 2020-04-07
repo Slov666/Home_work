@@ -55,10 +55,7 @@ body {
     margin: 0 auto;
     padding: 0;
     padding-top: 20px;
-}
-
-.site-li {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 }
 
 .site-reg {
@@ -85,8 +82,6 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
-    margin: 0 auto;
-    margin-bottom: 34px;
     text-align: center;
 }
 
@@ -128,14 +123,13 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 25px;
-    padding-top: 61px;
     margin: 0 auto;
     margin-bottom: 18px;
 }
 
 /* ############################## CARD */
 .section-card {
-    padding-bottom: 57px;
+    padding: 61px 0px 57px;
 }
 
 .card {
@@ -233,67 +227,4 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #ff4e50;
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 678px;
-        margin: 0 auto;
-    }
-
-    .header {
-        min-height: 540px;
-        background-image: url(../img/banner-tanlet.png);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .main-h2 .card-subtitle {
-        width: 250px;
-    }
-
-    .site-main {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    .site-ul {
-        margin: 0;
-        order: 1;
-    }
-    .findHoliday-title{
-        margin: 0;
-    }
-
-    .card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card-person {
-        flex-basis: 231px;
-    }
-
-    .order-one {
-        order: 1;
-    }
-
-    .order-two {
-        order: 2;
-    }
-}
-@media (min-width: 1200px) {
-    .container{
-        width: 1200px;
-    }
-    .header{
-        background-image: url(../img/banner-desktop.png);
-    }
-    .card{
-        display: flex;
-        flex-wrap: wrap;
-
-    }
 }
