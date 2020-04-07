@@ -49,7 +49,7 @@
 }
 @media (min-width: 960px) {
     .container{
-        width: 1170px;
+        width: 930px;
     }
     .header{
         background-image: url(../img/banner-desktop.png);
