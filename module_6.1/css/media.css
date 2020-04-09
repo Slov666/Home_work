@@ -52,7 +52,7 @@
     }
     .site-navigation{
         display: block;
-        min-height: 230px;
+        min-height: 140px;
     }
     .site-navigation-li a{
         display: inline-block;
