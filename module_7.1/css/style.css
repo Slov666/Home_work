@@ -1,0 +1,217 @@
+html {
+    box-sizing: content-box;
+}
+
+*,
+*::before *::after {
+    box-sizzing: inherit;
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    /* outline: 1px solid red; */
+    box-sizing: content-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -0.025em;
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ############################# SITE NAVIGATION */
+.nav {
+    min-height: 115px;
+    padding-bottom: 84px;
+}
+
+.logo a {
+    color: #fed136;
+    text-decoration: none;
+    display: block;
+}
+
+.site-navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.site-navigation-li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 41px;
+    display: block;
+}
+
+/* ################################### SERVICE FEATURES */
+
+.title-box {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #222222;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+    color: #777777;
+    display: block;
+    margin: 30px 0px 0px;
+}
+
+.contact-title {
+    color: #ffffff;
+    text-align: center;
+    padding: 110px 0px 75px;
+}
+
+/* ############################### */
+.features {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.features-li {
+    flex-basis: 280px;
+    text-align: center;
+}
+
+.features-li::before {
+    margin: 0 auto;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+}
+
+.icon-basket::before {
+    content: "";
+    background-image: url(/img/icon/icon-basket.png);
+}
+
+.icon-laptop::before {
+    content: "";
+    background-image: url(/img/icon/icon-laptop.png);
+}
+
+.icon-locked::before {
+    content: "";
+    background-image: url(/img/icon/icon-locked.png);
+}
+
+.features-title {
+    font-size: 18px;
+    line-height: 75px;
+    color: #222222;
+    margin: 0 auto;
+}
+
+.features-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+    margin: 0 auto;
+}
+
+/* ################################ FORM */
+.footer {
+    background-color: #222222;
+    padding-bottom: 116px;
+}
+
+.form-reqest {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contact-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 460px;
+    padding: 0;
+    padding-bottom: 7.5px;
+    margin: 0 auto;
+}
+
+.contact-li {
+    padding: 0px 30px 22.5px 0px;
+}
+
+.input {
+    border-radius: 3px;
+    border: none;
+    padding: 0px 0px 0px 15px;
+    width: 445px;
+    height: 55px;
+}
+
+.name:focus:invalid, .subject:focus:invalid, .email:focus:invalid, .textarea:focus:invalid {
+    background-color: #f0a8a6;
+}
+
+.name:focus:valid, .subject:focus:valid, .email:focus:valid, .textarea:focus:valid {
+    background-color: #9ae4a0;
+}
+
+.box-textaream {}
+
+.textarea {
+    width: 445px;
+    height: 185px;
+    padding: 17px 0px 6px 15px;
+    border-radius: 3px;
+    resize: none;
+}
+
+.btn {
+    margin: 0 auto;
+    width: 242px;
+    height: 66px;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #fed136;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
