@@ -34,7 +34,9 @@ img {
   padding: 0px;
 }
 /* #################SITE NAVVIGATION */
-
+.header{
+  padding-bottom: 120px;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -109,11 +111,14 @@ img {
   border-bottom: 3px solid #f38181 ; 
 }
 /* ############################################TITLE ########## H2*/
+.section-features{
+  padding-bottom: 164px;
+}
 .work-h2 {
   text-align: center;
   font-size: 24px;
   line-height: 29px;
-  padding: 120px 0px 24px;
+  margin: 24px;
   animation: work-h2 0.6s linear;
   font-family: "Kaushan Script", cursive;
 }
@@ -126,11 +131,7 @@ img {
     transform: translateY(0);
   }
 }
-.work-h2:hover {
-  text-shadow: 1px 1px 0 #ffe3bd, 2px 2px 0 #ffe3bd, 3px 3px 0 #ffe3bd,
-    4px 4px 0 #ffe3bd, 5px 5px 0 #ffe3bd;
-}
-.work-h2,
+
 .services-h2 {
   transition: 0.5s ease-in-out;
 }
@@ -163,6 +164,12 @@ img {
   height: 3px;
   margin: 0 auto;
   margin-top: 42px;
+}
+.i-h2{
+  font-family: "Kaushan Script", cursive;
+  text-transform: none;
+  display: block;
+  margin-bottom: 24px;
 }
 .title-h2 {
   padding-bottom: 64px;
@@ -251,6 +258,8 @@ img {
   width: 1100px;
   margin: 0 auto;
   color: #999999;
+  padding-bottom: 94px;
+  text-align: center;
   font-size: 15px;
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
@@ -393,7 +402,7 @@ img {
 font-family: 'Roboto', sans-serif;
 font-weight: 300;
 flex-basis: 230px;
-padding: 10px 0px;
+padding: 10px 10px;
 border: 1px solid rgb(229, 229, 229)
 }
 .input-box {

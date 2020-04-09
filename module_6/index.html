@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="nav-div container">
             <nav class="nav">
                 <a class="logo" href="#">
@@ -29,11 +29,10 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="section-features" >
             <div class=" container">
                 <div class=" title-h2">
-                    <h2 class="work-h2">We work with</h2>
-                    <h2 class="services-h2">Amazing Services</h2>
+                    <h2 class="services-h2"> <span class="i-h2"> We work with</span> Amazing Services</h2>
                 </div>
                 <ul class="features">
                     <li class="features-list alarm icon">
@@ -75,14 +74,13 @@
             </div>
         </section>
         <section class="last-section">
-            <div class=" title-h2  container">
-                <h2 class="work-h2">Who we are</h2>
-                <h2 class="services-h2">Meet our team</h2>
+            <div class="title-h2  container">
+                <h2 class="services-h2"> <span class="i-h2"> Who we are</span> Meet our team</h2>
+            </div>
                 <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat. </p>
-            </div>
 
             <ul class="cards container">
 
@@ -148,10 +146,13 @@
     <footer class="border container">
         <div class=" footer">
             <p class="footer-title">© 2016 MoGo free PSD template by <span class="span">Laaqiq</span></p>
-            <div class="input-box">
-                <label for="input-1"><span class="visually-hidden">Email</span></label><input name="input-1" class="input"
-                        placeholder="&nbsp;&nbsp;Your Email..."><button type="button" class="btn">Subscribe</button>
-            </div>
+            <form class="input-box">
+                <label for="input-1">
+                    <span class="visually-hidden">Email</span>
+                </label>
+                <input name="input-1" id="input-1" class="input" placeholder="Your Email...">
+                <button type="button" class="btn">Subscribe</button>
+            </form>
 
         </div>
 
