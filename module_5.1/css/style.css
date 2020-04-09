@@ -52,7 +52,6 @@ section {
   line-height: 32px;
   text-decoration: none;
   font-weight: 300;
-  float: left;
 }
 
 .logo:first-letter {
@@ -65,13 +64,8 @@ section {
 .nav {
 }
 .site-navigation {
-  float: right;
   list-style: none;
   padding: 6px 0px 0px;
-}
-.site-navigation-li {
-  float: left;
-  margin-right: 32px;
 }
 .site-navigation-li a {
   font-family: Roboto;

@@ -1,0 +1,108 @@
+@media (min-width: 768px) {
+
+    .site-navigation {
+        float: right;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    .site-navigation-li {
+        float: left;
+        margin-right: 32px;
+    }
+}
+
+@media only screen and (min-width: 756px) and (max-width: 1170px) {
+
+    .container {
+        width: 768px;
+    }
+
+    .site-navigation-li a {
+        font-size: 17px;
+    }
+
+    .logo {
+        padding-left: 44px;
+    }
+
+    .banner-ul {
+        min-width: 465px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .btn-l {
+        left: 15px;
+    }
+
+    .btn-r {
+        right: 15px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        line-height: 0px
+    }
+
+    .banner-subtitile {
+        font-size: 20px;
+        line-height: 0px;
+    }
+
+    .card-person:nth-child(odd) {
+        margin-left: 128px;
+    }
+
+    .card-person:not(:nth-last-child(-n +2)) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 320px;
+    }
+
+    .banner-section {
+        display: none;
+    }
+
+    .logo {
+        padding: 0;
+        margin-left: 120px;
+        display: inline-block;
+    }
+
+
+    .nav-div {
+        padding: 13px 0px 13px 0px;
+    }
+
+    .site-navigation-li {
+        margin: 0px 45px;
+    }
+
+    .site-navigation-li a {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .card-section {
+        padding: 50px 0px 50px;
+    }
+
+    .title-product {
+        font-size: 26px;
+    }
+
+    .card-person {
+        margin: 0px 32px;
+    }
+
+    .card-person.card-person:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
