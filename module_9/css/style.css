@@ -42,25 +42,27 @@ body {
 }
 
 .header {
-    /*     min-height: 540px; */
-    padding: 30px 0px 135px;
+    padding: 25px 0px 139px;
     background-image: url(../img/baner-mobile.png);
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 0% 0%;
     transition: 300ms linear;
+    
 }
 
 .site-ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0px 24px 0px 0px;
     padding: 0;
-    margin-bottom: 120px;
+    margin-bottom: 115px;
 }
 
 .site-reg {
+    font-size: 14px;
+    line-height: 16px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -79,7 +81,7 @@ body {
 /* #################################### */
 .findHoliday {
     text-align: center;
-    padding: 40px 0px 0px;
+    padding: 27px 0px 0px;
 }
 
 .findHoliday-centr {
@@ -89,9 +91,10 @@ body {
 .findHoliday-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 242x;
+    line-height: 24px;
     color: #ffffff;
     text-align: center;
+    margin: 0px 2px 0px 0px;
 }
 
 .findHoliday-big-title {
@@ -101,7 +104,7 @@ body {
     line-height: 36px;
     color: #ffffff;
     margin: 0 auto;
-    margin-bottom: 46px;
+    margin-bottom: 13px;
 
 }
 
@@ -109,11 +112,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px;
-    line-height: 16px;
+    line-height: 18px;
     color: #ffffff;
     margin: 0 auto;
     padding: 0px 35px;
-    margin-bottom: 40px;
+    margin-bottom: 19px;
 
 
 }
@@ -127,7 +130,7 @@ body {
     text-decoration: none;
     border: 1px solid #ff4e50;
     border-radius: 20px;
-    height: 40px;
+    height: 38px;
     width: 280px;
     padding: 10px 0px;
     margin: 0 auto;
@@ -138,15 +141,17 @@ body {
 .main-h2 {
     text-align: center;
     font-size: 22px;
-    line-height: 24px;
+    line-height: 25px;
     margin: 0 auto;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+    padding: 0px 10px 0px 0px;
     font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 /* ############################## CARD */
 .section-card {
-    padding: 61px 0px 57px;
+    padding: 67px 0px 57px;
 }
 
 .card {
@@ -157,7 +162,7 @@ body {
 }
 
 .card-person {
-    padding: 0px 0px 30px;
+    padding: 0px 3px 22px 0px;
     width: 290px;
     min-height: 200px;
     transition: 400ms linear;
@@ -168,10 +173,12 @@ body {
 }
 
 .card-name {
+    font-size: 14px;
+    line-height: 16px;
     margin: 0 auto;
     margin-bottom: 22px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 13px;
 }
 
 .card-subtitle {
@@ -237,8 +244,8 @@ body {
 }
 
 .OtherPartners-link {
-    display: inline-block;
-    text-align: center;
+
+
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -250,7 +257,8 @@ body {
     text-align: center;
     padding: 7px 0px;
     margin: 0 auto;
-    height: 35px;
+    height: 40px;
+    letter-spacing: -0.02em;
     width: 278px;
     transition: 200ms linear;
 }
