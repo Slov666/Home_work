@@ -1,0 +1,79 @@
+@media (min-width: 768px) {
+    .container {
+        width: 678px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 50px 0px 135px;
+        background-image: url(../img/banner-desktop.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-h2 .card-subtitle {
+        width: 250px;
+    }
+
+    .site-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .site-ul {
+        margin: 0;
+        order: 1;
+    }
+    .findHoliday {
+        padding: 160px 0px 0px;
+    }
+    .findHoliday-title{
+        margin: 0;
+    }
+    .findHoliday-big-title{
+        font-size: 52px;
+        line-height: 62px;
+    }
+    .findHoliday-subtitle {
+        font-size: 24px;
+        line-height: 26px;
+        padding: 0px;
+    }
+    .findHoliday-button{
+        width: 225px;
+    }
+    .OtherPartners-link{
+        width: 192px;
+    }
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/*     .card-person {
+        flex-basis: 231px;
+    } */
+
+    .order-one {
+        order: 1;
+    }
+
+    .order-two {
+        order: 2;
+    }
+}
+@media (min-width: 960px) {
+    .container{
+        width: 930px;
+    }
+    .header{
+        background-image: url(../img/banner-desktop.png);
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
