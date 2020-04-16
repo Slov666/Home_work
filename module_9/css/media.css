@@ -5,7 +5,7 @@
     }
 
     .header {
-        padding: 50px 0px 135px;
+        padding: 43px 0px 235px;
         background-image: url(../img/banner-desktop.png);
         background-position: center;
         background-size: cover;
@@ -18,43 +18,61 @@
     .site-main {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+    }
+
+    .site-reg {
+        padding: 0px 0px 0px 0px;
     }
 
     .site-ul {
-        margin: 0;
+        margin: 0px 5px 0px 0px;
         order: 1;
     }
+
     .findHoliday {
-        padding: 160px 0px 0px;
+        padding: 135px 4px 0px 0px;
+
     }
-    .findHoliday-title{
+
+    .findHoliday-title {
+        letter-spacing: 0.05em;
         margin: 0;
     }
-    .findHoliday-big-title{
+
+    .findHoliday-big-title {
         font-size: 52px;
         line-height: 62px;
+        margin: 0px 0px 26px;
     }
+
     .findHoliday-subtitle {
         font-size: 24px;
         line-height: 26px;
         padding: 0px;
+        margin: 0px 0px 35px 0px;
     }
-    .findHoliday-button{
+
+    .findHoliday-button {
         width: 225px;
     }
-    .OtherPartners-link{
+
+    .OtherPartners-link {
         width: 192px;
+        padding: 10px 0px;
     }
+
     .card {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 32px;
     }
-
-/*     .card-person {
-        flex-basis: 231px;
-    } */
+    .main-h2 {
+        font-size: 22px;
+        line-height: 26px;
+        padding: 2px 7px 0px 0px;
+        letter-spacing: 0em;
+    }
 
     .order-one {
         order: 1;
@@ -64,16 +82,57 @@
         order: 2;
     }
 }
+@media (min-width: 768px) and (max-width: 959px) {
+    .site-main{
+        align-items: baseline;
+    }
+.card-person:nth-child(1){
+    margin: 0px 0px 0px 1px;
+    padding: 16px 20px 0px 0px;      
+}
+.card-person:nth-child(2){
+    padding: 37px 18px 0px 0px;
+}
+.card-person:nth-child(3){
+    padding: 14px 0px 0px 21px;
+}
+.card-person:nth-child(4){
+    padding: 36px 0px 0px 17px;
+}
+
+.card-person{
+    padding: 0px;
+}
+}
+
 @media (min-width: 960px) {
-    .container{
+    .container {
         width: 930px;
     }
-    .header{
+
+    .header {
+        padding: 46px 0px 235px;
         background-image: url(../img/banner-desktop.png);
     }
-    .card{
+    .findHoliday-title{
+        letter-spacing: -0.02em;
+    }
+.findHoliday-subtitle{
+    margin: 0px 0px 37px 0px;
+}
+.main-h2 {
+    font-size: 22px;
+    line-height: 26px;
+    padding: 0px 5px 0px 0px;
+    letter-spacing: -0.02em;
+}
+.card-person {
+    padding: 16px 0px 23px 0px;
+}
+    .card {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 10px;
 
     }
 }
