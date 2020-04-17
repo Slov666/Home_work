@@ -58,6 +58,7 @@ body {
     margin: 0px 24px 0px 0px;
     padding: 0;
     margin-bottom: 115px;
+    transition: 200ms linear;
 }
 
 .site-reg {

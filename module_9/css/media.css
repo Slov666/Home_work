@@ -28,6 +28,10 @@
         margin: 0px 5px 0px 0px;
         order: 1;
     }
+    .findHoliday-box{
+        flex-direction: row-reverse;
+        
+    }
 
     .findHoliday {
         padding: 135px 4px 0px 0px;
