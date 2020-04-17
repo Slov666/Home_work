@@ -5,10 +5,11 @@
     }
 
     .header {
-        min-height: 540px;
         background-image: url(../img/banner-tanlet.png);
         background-position: center;
         background-size: cover;
+        
+    padding-bottom: 189px;
     }
 
     .main-h2 .card-subtitle {
@@ -19,14 +20,28 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom: 160px;
     }
 
     .site-ul {
-        margin: 0;
+        margin: 0 auto;
         order: 1;
     }
     .findHoliday-title{
-        margin: 0;
+        margin: 0 auto;
+    }
+    .findHoliday-big-title{
+        width: 550px ;
+        font-size: 52px;
+        line-height: 62px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .findHoliday-subtitle{
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 36px;
+        font-weight: 300;
     }
 
     .card {
