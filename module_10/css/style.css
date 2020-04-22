@@ -90,7 +90,7 @@ body {
 }
 
 .page-header--background {
-    background-image: url(/img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
