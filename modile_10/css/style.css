@@ -1,0 +1,354 @@
+html {
+    box-sizing: content-box;
+}
+
+*,
+*::before *::before {
+    box-sizzing: inherit;
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: "Kaushan Script", cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+/* ########################################## */
+.flex-row-space_between-centr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.ff--Kaushan--Script {
+    font-family: "Kaushan Script", cursive;
+    text-transform: none;
+    display: block;
+}
+
+.text {
+    margin: 0 auto;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.section{
+    margin-bottom: 85px;
+}
+/* ########################################### Header */
+.page-header {
+    text-align: center;
+    padding-bottom: 230px;
+}
+
+.page-header--background {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-nav {
+    min-height: 70px;
+    margin-bottom: 190px;
+}
+
+.site-logo {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.site-navigation {
+    flex-basis: 624px;
+    margin: 0;
+}
+
+.site-navigation__link {
+    display: inline-block;
+    height: 25px;
+    font-size: 14px;
+    line-height: 16px;
+    transition: 200ms ease-in;
+}
+
+.site-navigation__link:hover {
+    border-bottom: 3px solid #fce38a;
+    color: #fce38a;
+}
+
+.site-navigation__icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+}
+
+/* ################## */
+.page-header__title {
+    font-family: 'Montserrat', sans-serif;
+    ;
+    width: 840px;
+    text-transform: uppercase;
+    font-size: 150px;
+    line-height: 140px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 62px;
+
+}
+
+.page-header__title--mod {
+    font-size: 72px;
+    line-height: 86px;
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.page-header__button {
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 14px 35px;
+}
+
+/* ######################################### SECTION CARDS */
+.section__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+}
+
+.section__title--border::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.title--mod {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 22px;
+}
+
+/* ######################### */
+
+.card {
+    text-align: left;
+}
+
+.card__item {
+    flex-basis: 376px;
+    position: relative;
+    
+}
+.card__item:nth-child(-n +3){
+    margin-bottom: 100px;
+}
+
+.card__icon {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.card__title {
+    margin: 0px 0px 22px 70px;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.card__text {
+    margin: 0px 0px 0px 70px;
+    line-height: 24px;
+}
+
+.section__subtitle {
+    text-align: center;
+    margin-bottom: 94px;
+}
+
+/* ################################################# TEAM */
+.team__card {}
+
+.team__box-img {
+    position: relative;
+    width: 380px;
+    height: 470px;
+
+}
+
+.team__hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    transition: transform 200ms linear, background 200ms linear, box-shadow 200ms linear;
+}
+
+.team__box-img {
+    margin-bottom: 26px;
+}
+
+.team__card:hover .team__hover {
+    box-shadow: 10px 10px 0px #95e1d3;
+    transform: translate(-10px, -10px);
+}
+
+.team__card:hover .team__hover--1 {
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person1@1x.jpg);
+    ;
+}
+
+.team__card:hover .team__hover--2 {
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person2@1x.jpg);
+}
+
+.team__card:hover .team__hover--3 {
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person3@1x.jpg)
+}
+
+.team__hover-item {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+    transition: background 200ms linear;
+}
+
+.team__card:hover .team__hover-item {
+    visibility: visible;
+}
+
+.team__hover-item:hover {
+    background-color: #f38181;
+}
+
+.team__icon-link {
+    width: 32px;
+    height: 32px;
+    fill: #f38181;
+}
+
+.team__hover-item:hover .team__icon-link {
+    fill: #ffffff;
+}
+
+.team__name {
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+/*############################ FOOTER  */
+.footer{
+    border-top: 1px solid #cccccc;
+}
+.footer__text--color{
+    color: #f38181;
+}
+.footer__text{
+    color: #333333;
+}
+.footer__form{
+    display: flex;
+    justify-content: center;
+}
+.footer__input{
+    border: 1px solid #e7e7e7;
+    height: 40px;
+    padding: 0px 57px 0px 14px;
+}
+.footer__input[placeholder] {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-style: italic;
+}
+.footer__button{
+    background-color: #95e1d3;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    padding: 0px 37px;
+}
