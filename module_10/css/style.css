@@ -265,18 +265,18 @@ body {
 
 .team__card:hover .team__hover--1 {
     background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person1@1x.jpg);
+            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person1@1x.jpg);
     ;
 }
 
 .team__card:hover .team__hover--2 {
     background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person2@1x.jpg);
+            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person2@1x.jpg);
 }
 
 .team__card:hover .team__hover--3 {
     background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person3@1x.jpg)
+            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person3@1x.jpg)
 }
 
 .team__hover-item {
