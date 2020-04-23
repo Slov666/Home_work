@@ -295,30 +295,30 @@ body {
 
 .team__card:hover .team__hover--1 {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)),
-            to(rgb(243, 129, 129, 0.9))), url(./img/person/person1@1x.jpg);
+            to(rgb(243, 129, 129, 0.9))), url(/img/person/person1@1x.jpg);
     background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person1@1x.jpg);
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person1@1x.jpg);
     background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person1@1x.jpg);
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person1@1x.jpg);
     ;
 }
 
 .team__card:hover .team__hover--2 {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)),
-            to(rgb(243, 129, 129, 0.9))), url(./img/person/person2@1x.jpg);
+            to(rgb(243, 129, 129, 0.9))), url(/img/person/person2@1x.jpg);
     background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person2@1x.jpg);
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person2@1x.jpg);
     background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person2@1x.jpg);
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person2@1x.jpg);
 }
 
 .team__card:hover .team__hover--3 {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)),
-            to(rgb(243, 129, 129, 0.9))), url(./img/person/person3@1x.jpg);
+            to(rgb(243, 129, 129, 0.9))), url(/img/person/person3@1x.jpg);
     background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person3@1x.jpg);
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person3@1x.jpg);
     background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%,
-            rgb(243, 129, 129, 0.9) 100%), url(./img/person/person3@1x.jpg)
+            rgb(243, 129, 129, 0.9) 100%), url(/img/person/person3@1x.jpg)
 }
 
 .team__hover-item {
@@ -371,6 +371,7 @@ body {
 .footer{
     border-top: 1px solid #cccccc;
 }
+
 .footer__text--color{
     color: #f38181;
 }
