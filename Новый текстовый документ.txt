@@ -1,0 +1,20 @@
+  <header class="page-header">
+    <nav class="page-nav">
+      <ul class="site-navigation">
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">About</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Service</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Work</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Blog</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Contact</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">
+          <svg class="site-navigation__icon-svg">
+              <use href="/src/images/sprite/symbol-defs.svg#shopping_card"></use>
+            </svg></a></li>
+        <li class="site-navigation__item">
+<a href="#" class="site-navigation__link">
+          <svg class="site-navigation__icon-svg">
+              <use href="/src/images/sprite/symbol-defs.svg#Magnifying_glass"></use>
+            </svg></a></li>
+      </ul>
+    </nav>
+  </header>
